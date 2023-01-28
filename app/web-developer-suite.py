@@ -25,7 +25,6 @@ def colorpicker():
     print (str(resp))
 
     screen = ag.screenshot()
-    screen.save('C:/dev/python/web-developer-suite/prints/print.jpg')
     colorRGB = screen.getpixel((x,y))
     colorHEX = '#%02x%02x%02x' % (colorRGB)
 
