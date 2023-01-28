@@ -24,7 +24,7 @@ def colorpicker():
     resp = ag.onScreen(x, y)
     print (str(resp))
 
-    screen = ag.screenshot()
+    screen = ag.screenshot() # type: ignore    
     colorRGB = screen.getpixel((x,y))
     colorHEX = '#%02x%02x%02x' % (colorRGB)
 
